@@ -4,22 +4,58 @@
       name="Open+Sans, Rubik"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Rubik:wght@400;500;600;700&amp;display=swap"
     />
+    <mj-attributes>
+      <mj-all line-height="20px" align="center" />
+      <mj-class
+        name="navbar__text"
+        color="#14d9c4"
+        font-size="14px"
+        font-weight="bold"
+      />
+      <mj-class
+        name="conference__text"
+        padding-top="20px"
+        padding-bottom="0px"
+        color="#54585A"
+      />
+      <mj-class
+        name="conference__image"
+        width="100px"
+        border-radius="100%"
+        padding-bottom="0px"
+      />
+      <mj-class
+        name="conference__column"
+        background-color="#fff"
+        width="80%"
+        border-radius="5px"
+      />
+      <mj-class
+        name="conference__author"
+        padding-top="0px"
+        padding-bottom="0px"
+        color="#54585A"
+      />
+      <mj-class name="color__dark" color="#54585A" />
+      <mj-button
+        background-color="#ffeb3b"
+        color="#54585A"
+        border-radius="3px"
+        font-weight="500"
+      />
+      <mj-section
+        background-color="#fff"
+        background-repeat="repeat"
+        text-align="center"
+        vertical-align="top"
+        background-size="auto"
+      />
+    </mj-attributes>
   </mj-head>
-  <mj-body
-    background-color="#ECECEC"
-    color="#55575d"
-    font-family="Open+Sans, sans-serif"
-  >
-    <mj-section
-    background-color="#fff"
-      background-repeat="repeat"
-      padding-top="20px"
-      text-align="center"
-      vertical-align="top"
-    >
+  <mj-body background-color="#ECECEC" font-family="Open+Sans, sans-serif">
+    <mj-section padding-top="20px">
       <mj-column width="33.33333333333333%" vertical-align="middle">
         <mj-image
-          align="center"
           padding="10px 25px"
           src="./assets/logo_adalaberfest.png"
           href="https://adalaberfest.adalab.es/"
@@ -35,65 +71,47 @@
         <mj-navbar>
           <mj-navbar-link
             href="https://adalaberfest.adalab.es/#event"
-            color="#14d9c4"
-            font-size="14px"
-            font-weight="bold"
+            mj-class="navbar__text"
             >Evento</mj-navbar-link
           >
-
           <mj-navbar-link
             href="https://adalaberfest.adalab.es/#schedule"
-            color="#14d9c4"
-            font-size="14px"
-            font-weight="bold"
+            mj-class="navbar__text"
             >Ponencias</mj-navbar-link
           >
           <mj-navbar-link
             href="https://adalaberfest.adalab.es/#contact"
-            color="#14d9c4"
-            font-size="14px"
-            font-weight="bold"
+            mj-class="navbar__text"
             >Contacto</mj-navbar-link
           >
         </mj-navbar>
-        </mj-navbar>
       </mj-column>
     </mj-section>
-    <mj-section background-color="#fff" padding-top="0px">
+    <mj-section padding-top="0px">
       <mj-column>
-        <mj-divider border-width="1px" border-style="solid" border-color="#b8b8b9" />
+        <mj-divider
+          border-width="1px"
+          border-style="solid"
+          border-color="#b8b8b9"
+        />
       </mj-column>
     </mj-section>
-    <mj-section
-      background-color="#ffffff"
-      background-repeat="repeat"
-      background-size="auto"
-      padding="20px 0px 15px 0px"
-      text-align="center"
-      vertical-align="top"
-    >
+    <mj-section padding="20px 0px 15px 0px">
       <mj-column>
         <mj-text
-          align="center"
           color="#55575d"
           font-family="Rubik, sans-serif"
           font-size="14px"
           line-height="28px"
           padding="0px 25px 0px 25px"
-          >
-            <h1>¡Vuelve a vivir el evento del año!</h1>
+        >
+          <h1>¡Vuelve a vivir el evento del año!</h1>
         </mj-text>
       </mj-column>
-    </mj-section><mj-section
-      background-color="#ffffff"
-      background-repeat="repeat"
-      padding="5px 0"
-      text-align="center"
-      vertical-align="top"
-    >
+    </mj-section>
+    <mj-section padding="5px 0">
       <mj-column>
         <mj-image
-          align="center"
           padding="10px 25px"
           src="./assets/background.jpg"
           width="600px"
@@ -101,106 +119,210 @@
         ></mj-image>
       </mj-column>
     </mj-section>
-    <mj-section padding="10px" background-color="#FFFFFF" >
+    <mj-section padding="10px">
       <mj-column>
-        <mj-text color="#14d9c4" font-size="20px" align="center" font-family="Rubik, sans-serif">
+        <mj-text
+          color="#14d9c4"
+          font-size="20px"
+          font-family="Rubik, sans-serif"
+        >
           <h2>Ponencias</h2>
-        </text>
+        </mj-text>
       </mj-column>
-    
     </mj-section>
     <mj-section padding="30px 0px" background-color="#099D8D">
-      <mj-column width="80%" background-color="#fff" border-radius="5px" >
-        <mj-text align="center" padding-top="20px" padding-bottom="0px" color="#54585A" line-height="20px">
+      <mj-column mj-class="conference__column">
+        <mj-text mj-class="conference__text">
           <h3>PERO... ¡NO SOY INGENIERA DE SOFTWARE! ¿O SÍ?</h3>
-          <p>Tras año y medio como ingeniera de software, he trabajado con dos frameworks de Javascript, React y Angular, y también he tocado un poco el backend. Os hablo de los beneficios de tocar muchas tecnologías y qué he añadido a mi 'juego de herramientas' de programadora.</p>
+          <p>
+            Tras año y medio como ingeniera de software, he trabajado con dos
+            frameworks de Javascript, React y Angular, y también he tocado un
+            poco el backend. Os hablo de los beneficios de tocar muchas
+            tecnologías y qué he añadido a mi 'juego de herramientas' de
+            programadora.
+          </p>
         </mj-text>
-        <mj-image src="./assets/megan-edwards.png" width="100px" border-radius="100%" padding-bottom="0px"></mj-image>
-        <mj-text align="center" padding-top="0px" padding-bottom="0px" color="#54585A" line-height="20px"><h4>Megan Edwards</h4></mj-text>
-        <mj-button background-color="#ffeb3b" color="#54585A" border-radius="3px" font-weight="500">VER CHARLA</mj-button>
+        <mj-image
+          src="./assets/megan-edwards.png"
+          mj-class="conference__image"
+        ></mj-image>
+        <mj-text mj-class="conference__author"><h4>Megan Edwards</h4></mj-text>
+        <mj-button>VER CHARLA</mj-button>
       </mj-column>
-       <mj-column width="90%">
-        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-1.png" alt="" width="292px" align="left" border="none"></mj-image>
+      <mj-column width="90%">
+        <mj-image
+          src="http://nimus.de/share/tpl-realestate/symbol-1.png"
+          alt=""
+          width="292px"
+          align="left"
+          border="none"
+        ></mj-image>
       </mj-column>
-      <mj-column width="80%" background-color="#fff" border-radius="5px" >
-        <mj-text align="center" padding-top="20px" padding-bottom="0px" color="#54585A" line-height="20px">
+      <mj-column mj-class="conference__column">
+        <mj-text mj-class="conference__text">
           <h3>CONTRATOS DE DESARROLLO DE SOFTWARE: PUNTOS A TENER EN CUENTA</h3>
-          <p>Aspectos a tener en cuenta a la hora de redactar un contrato de desarrollo software y consejos sobre cómo redactar las cláusulas relevantes: derechos y obligaciones, duración, precio, confidencialidad, propiedad intelectual y resolución de controversias.</p>
+          <p>
+            Aspectos a tener en cuenta a la hora de redactar un contrato de
+            desarrollo software y consejos sobre cómo redactar las cláusulas
+            relevantes: derechos y obligaciones, duración, precio,
+            confidencialidad, propiedad intelectual y resolución de
+            controversias.
+          </p>
         </mj-text>
-        <mj-image src="./assets/concha-asensio.png" width="100px" border-radius="100%" padding-bottom="0px"></mj-image>
-        <mj-text align="center" padding-top="0px" padding-bottom="0px" color="#54585A" line-height="20px"><h4>Concha Asensio</h4></mj-text>
-        <mj-button background-color="#ffeb3b" color="#54585A" border-radius="3px" font-weight="500">VER CHARLA</mj-button>
+        <mj-image
+          src="./assets/concha-asensio.png"
+          mj-class="conference__image"
+        ></mj-image>
+        <mj-text mj-class="conference__author"><h4>Concha Asensio</h4></mj-text>
+        <mj-button>VER CHARLA</mj-button>
       </mj-column>
-       <mj-column width="90%">
-        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-2.png" alt="" width="292px" align="right" border="none"></mj-image>
+      <mj-column width="90%">
+        <mj-image
+          src="http://nimus.de/share/tpl-realestate/symbol-2.png"
+          alt=""
+          width="292px"
+          align="right"
+          border="none"
+        ></mj-image>
       </mj-column>
-       <mj-column width="80%" background-color="#fff" border-radius="5px" >
-        <mj-text align="center" padding-top="20px" padding-bottom="0px" color="#54585A" line-height="20px">
+      <mj-column mj-class="conference__column">
+        <mj-text mj-class="conference__text">
           <h3>LIVE CODING</h3>
-          <p>El live coding es una práctica y movimiento artístico que consiste en crear y modificar algortimos para generar música en tiempo real, a la vez que se proyecta el código frente a una audiencia.</p>
+          <p>
+            El live coding es una práctica y movimiento artístico que consiste
+            en crear y modificar algortimos para generar música en tiempo real,
+            a la vez que se proyecta el código frente a una audiencia.
+          </p>
         </mj-text>
-        <mj-text align="center" padding-bottom="0px">
-          <span style="padding-right:15px">
-            <img src="./assets/irene-fuente.png" style="width:80px; border-radius:100%; padding-bottom:0px"/>
+        <mj-text padding-bottom="0px">
+          <span style="padding-right: 15px">
+            <img
+              src="./assets/irene-fuente.png"
+              style="width: 80px; border-radius: 100%; padding-bottom: 0px"
+            />
           </span>
-          <span style="padding-right:15px">
-            <img src="./assets/elvira-fuente.png" style="width:80px; border-radius:100%; padding-bottom:0px"/>
+          <span style="padding-right: 15px">
+            <img
+              src="./assets/elvira-fuente.png"
+              style="width: 80px; border-radius: 100%; padding-bottom: 0px"
+            />
           </span>
           <span>
-            <img src="./assets/carla-rodriguez.png" style="width:80px; border-radius:100%; padding-bottom:0px"/>
+            <img
+              src="./assets/carla-rodriguez.png"
+              style="width: 80px; border-radius: 100%; padding-bottom: 0px"
+            />
           </span>
         </mj-text>
-        <mj-text align="center" padding-top="0px" padding-bottom="0px" color="#54585A" line-height="20px"><h4>Irene Fuente, Elvira Fuente y Carla Rodríguez</h4></mj-text>
-        
-        <mj-button background-color="#ffeb3b" color="#54585A" border-radius="3px" font-weight="500">VER CHARLA</mj-button>
+        <mj-text mj-class="conference__author"
+          ><h4>Irene Fuente, Elvira Fuente y Carla Rodríguez</h4></mj-text
+        >
+        <mj-button>VER CHARLA</mj-button>
       </mj-column>
-       <mj-column width="90%">
-        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-1.png" alt="" width="292px" align="left" border="none"></mj-image>
+      <mj-column width="90%">
+        <mj-image
+          src="http://nimus.de/share/tpl-realestate/symbol-1.png"
+          alt=""
+          width="292px"
+          align="left"
+          border="none"
+        ></mj-image>
       </mj-column>
-      <mj-column width="80%" background-color="#fff" border-radius="5px" >
-        <mj-text align="center" padding-top="20px" padding-bottom="0px" color="#54585A" line-height="20px">
+      <mj-column mj-class="conference__column">
+        <mj-text mj-class="conference__text">
           <h3>MAQUETANDO EMAILS CON SUPERPODERES</h3>
-          <p>¿Te has enfrentado a la maquetación de emails? En esta charla conoceremos MJML, el framework para superheroínas. Aprenderemos a maquetar emails responsive de manera fácil, sencilla y para todos los públicos.</p>
+          <p>
+            ¿Te has enfrentado a la maquetación de emails? En esta charla
+            conoceremos MJML, el framework para superheroínas. Aprenderemos a
+            maquetar emails responsive de manera fácil, sencilla y para todos
+            los públicos.
+          </p>
         </mj-text>
-        <mj-image src="./assets/marisol-pena.png" width="100px" border-radius="100%" padding-bottom="0px"></mj-image>
-        <mj-text align="center" padding-top="0px" padding-bottom="0px" color="#54585A" line-height="20px"><h4>Marisol Peña</h4></mj-text>
-        <mj-button background-color="#ffeb3b" color="#54585A" border-radius="3px" font-weight="500">VER CHARLA</mj-button>
+        <mj-image
+          src="./assets/marisol-pena.png"
+          mj-class="conference__image"
+        ></mj-image>
+        <mj-text mj-class="conference__author"><h4>Marisol Peña</h4></mj-text>
+        <mj-button>VER CHARLA</mj-button>
       </mj-column>
-       <mj-column width="90%">
-        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-2.png" alt="" width="292px" align="right" border="none"></mj-image>
+      <mj-column width="90%">
+        <mj-image
+          src="http://nimus.de/share/tpl-realestate/symbol-2.png"
+          alt=""
+          width="292px"
+          align="right"
+          border="none"
+        ></mj-image>
       </mj-column>
-      <mj-column width="80%" background-color="#fff" border-radius="5px" >
-        <mj-text align="center" padding-top="20px" padding-bottom="0px" color="#54585A" line-height="20px">
-          <h3>EVENT STORMING: DINÁMICA DE APRENDIZAJE COLECTIVO. ¿QUÉ SE QUIERE DE LA APLICACIÓN Y PARA QUÉ?</h3>
-          <p>El event storming es una dinámica de aprendizaje que da mejores herramientas a los desarrolladores para entender el dominio del problema y, por tanto, desarrollar un software más eficiente. </p>
+      <mj-column mj-class="conference__column">
+        <mj-text mj-class="conference__text">
+          <h3>
+            EVENT STORMING: DINÁMICA DE APRENDIZAJE COLECTIVO. ¿QUÉ SE QUIERE DE
+            LA APLICACIÓN Y PARA QUÉ?
+          </h3>
+          <p>
+            El event storming es una dinámica de aprendizaje que da mejores
+            herramientas a los desarrolladores para entender el dominio del
+            problema y, por tanto, desarrollar un software más eficiente.
+          </p>
         </mj-text>
-        <mj-image src="./assets/libertad-pozos.png" width="100px" border-radius="100%" padding-bottom="0px"></mj-image>
-        <mj-text align="center" padding-top="0px" padding-bottom="0px" color="#54585A" line-height="20px"><h4>Libertad Pozos</h4></mj-text>
-        <mj-button background-color="#ffeb3b" color="#54585A" border-radius="3px" font-weight="500">VER CHARLA</mj-button>
+        <mj-image
+          src="./assets/libertad-pozos.png"
+          mj-class="conference__image"
+        ></mj-image>
+        <mj-text mj-class="conference__author"><h4>Libertad Pozos</h4></mj-text>
+        <mj-button>VER CHARLA</mj-button>
       </mj-column>
     </mj-section>
-    <mj-section  vertical-align="middle" background-size="cover" background-repeat="no-repeat" background-color="#fff">
+    <mj-section vertical-align="middle" background-size="cover">
       <mj-column width="100%">
-        <mj-image src="http://nimus.de/share/tpl-card/lineshadow.png" alt="" align="center" border="none" padding="0px"></mj-image>
-        <mj-divider border-width="1px" border-color="#54585A" width="20%"></mj-divider>
-        <mj-text align="center" padding="10px 40px 0 40px" color="#54585A" line-height="20px">
-          <p>AdalaberFest es un evento creado por y para las #Adalabers y abierto a la comunidad tecnológica. Contribuimos a la presencia de mujeres en eventos tecnológicos y apoyar la diversidad.</p>
+        <mj-image
+          src="http://nimus.de/share/tpl-card/lineshadow.png"
+          alt=""
+          border="none"
+          padding="0px"
+        ></mj-image>
+        <mj-divider
+          border-width="1px"
+          border-color="#54585A"
+          width="20%"
+        ></mj-divider>
+        <mj-text mj-class="color__dark" padding="10px 40px 0 40px">
+          <p>
+            AdalaberFest es un evento creado por y para las #Adalabers y abierto
+            a la comunidad tecnológica. Contribuimos a la presencia de mujeres
+            en eventos tecnológicos y apoyar la diversidad.
+          </p>
           <h3>¿Todavía no nos sigues?</h3>
         </mj-text>
       </mj-column>
     </mj-section>
     <mj-section background-color="#54585A" padding-bottom="0px" padding-top="0">
       <mj-column vertical-align="middle">
-        <mj-image href="https://adalaberfest.adalab.es/" src="./assets/logo_grey_adalaberfest.png" alt="Logo yellow" width="133px" padding="0px"></mj-image>
+        <mj-image
+          href="https://adalaberfest.adalab.es/"
+          src="./assets/logo_grey_adalaberfest.png"
+          alt="Logo yellow"
+          width="133px"
+          padding="0px"
+        ></mj-image>
       </mj-column>
       <mj-column vertical-align="middle">
         <mj-social mode="horizontal" padding="30px">
-          <mj-social-element href="mailto:adalaberfest@adalab.es" src="./assets/email-light.png"></mj-social-element>
-          <mj-social-element href="https://twitter.com/adalaberfest" src="./assets/twitter-light.png"></mj-social-element>
-          <mj-social-element href="https://www.twitch.tv/adalaberfest" src="./assets/twitch-light.png"></mj-social-element>
+          <mj-social-element
+            href="mailto:adalaberfest@adalab.es"
+            src="./assets/email-light.png"
+          ></mj-social-element>
+          <mj-social-element
+            href="https://twitter.com/adalaberfest"
+            src="./assets/twitter-light.png"
+          ></mj-social-element>
+          <mj-social-element
+            href="https://www.twitch.tv/adalaberfest"
+            src="./assets/twitch-light.png"
+          ></mj-social-element>
         </mj-social>
       </mj-column>
     </mj-section>
-   
   </mj-body>
 </mjml>
