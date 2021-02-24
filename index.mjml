@@ -47,12 +47,11 @@
         background-color="#fff"
         background-repeat="repeat"
         text-align="center"
-        vertical-align="top"
         background-size="auto"
       />
     </mj-attributes>
   </mj-head>
-  <mj-body background-color="#ECECEC" font-family="Open+Sans, sans-serif">
+  <mj-body background-color="#ECECEC">
     <mj-section padding-top="20px">
       <mj-column width="33.33333333333333%" vertical-align="middle">
         <mj-image
@@ -274,7 +273,7 @@
         <mj-button>VER CHARLA</mj-button>
       </mj-column>
     </mj-section>
-    <mj-section vertical-align="middle" background-size="cover">
+    <mj-section background-size="cover">
       <mj-column width="100%">
         <mj-image
           src="http://nimus.de/share/tpl-card/lineshadow.png"
@@ -295,6 +294,19 @@
           </p>
           <h3>¿Todavía no nos sigues?</h3>
         </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="66%">
+        <mj-text>
+          <h3>Ponte en contacto con nosotras</h3>
+          <p>Echa un vistazo a nuestras redes sociales</p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-button href="https://adalaberfest.adalab.es/">
+          Ponerse en contacto
+        </mj-button>
       </mj-column>
     </mj-section>
     <mj-section background-color="#54585A" padding-bottom="0px" padding-top="0">
